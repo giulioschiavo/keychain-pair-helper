@@ -1,0 +1,47 @@
+{
+  "extensionName": {
+    "message": "Keychain Pair Helper"
+  },
+  "extensionDescription": {
+    "message": "Compila il codice di abbinamento nell’estensione ufficiale Password di iCloud su macOS."
+  },
+  "intro": {
+    "message": "Il codice di abbinamento, compilato per te."
+  },
+  "connecting": {
+    "message": "Collegamento al Mac…"
+  },
+  "authorize": {
+    "message": "Autorizza sul Mac"
+  },
+  "pause": {
+    "message": "Metti in pausa"
+  },
+  "enable": {
+    "message": "Attiva compilazione"
+  },
+  "waiting": {
+    "message": "Attendi…"
+  },
+  "hint": {
+    "message": "Apri Password di iCloud per avviare l’abbinamento. Questo helper compila solo il codice a sei cifre."
+  },
+  "privacy": {
+    "message": "Sul tuo Mac. Nessun codice salvato."
+  },
+  "hostUnavailable": {
+    "message": "Componente Mac non raggiungibile. Controlla l’installazione e riprova."
+  },
+  "hostStopped": {
+    "message": "Componente Mac arrestato."
+  },
+  "paused": {
+    "message": "In pausa"
+  },
+  "connectionFailed": {
+    "message": "Collegamento non riuscito. Riprova."
+  },
+  "notReady": {
+    "message": "Estensione non pronta. Chiudi e riapri questo pannello."
+  }
+}

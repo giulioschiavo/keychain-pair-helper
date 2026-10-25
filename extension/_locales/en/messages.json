@@ -1,0 +1,47 @@
+{
+  "extensionName": {
+    "message": "Keychain Pair Helper"
+  },
+  "extensionDescription": {
+    "message": "Automatically enters the pairing code in the official iCloud Passwords extension on macOS."
+  },
+  "intro": {
+    "message": "Your pairing code, filled for you."
+  },
+  "connecting": {
+    "message": "Connecting to your Mac…"
+  },
+  "authorize": {
+    "message": "Authorize on Mac"
+  },
+  "pause": {
+    "message": "Pause"
+  },
+  "enable": {
+    "message": "Enable autofill"
+  },
+  "waiting": {
+    "message": "Please wait…"
+  },
+  "hint": {
+    "message": "Open iCloud Passwords to start pairing. This helper fills only the six-digit pairing code."
+  },
+  "privacy": {
+    "message": "On your Mac. No codes saved."
+  },
+  "hostUnavailable": {
+    "message": "Mac helper unavailable. Check the installation and try again."
+  },
+  "hostStopped": {
+    "message": "Mac helper stopped."
+  },
+  "paused": {
+    "message": "Paused"
+  },
+  "connectionFailed": {
+    "message": "Connection failed. Try again."
+  },
+  "notReady": {
+    "message": "Extension not ready. Close and reopen this panel."
+  }
+}

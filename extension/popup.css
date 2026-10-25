@@ -1,0 +1,27 @@
+:root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1d252e; background: #f7f8fa; }
+* { box-sizing: border-box; }
+body { width: 350px; margin: 0; font-size: 14px; line-height: 1.5; }
+main { padding: 24px; }
+h1 { margin: 0 0 2px; font-size: 21px; font-weight: 650; letter-spacing: -.025em; }
+p { margin: 0; }
+.intro { color: #475566; }
+#status { margin: 24px 0 16px; padding-top: 16px; border-top: 1px solid #cfd5dd; min-height: 60px; font-weight: 550; }
+button { display: block; width: 100%; border: 0; border-radius: 8px; padding: 10px 14px; font: inherit; font-weight: 600; background: #155bc1; color: #fff; cursor: pointer; margin-top: 8px; }
+button:hover { background: #104899; }
+button:focus-visible { outline: 3px solid #476eab; outline-offset: 3px; }
+button:disabled { opacity: .55; cursor: wait; }
+button[hidden] { display: none; }
+#toggle { background: #e3e8ef; color: #25374d; }
+#toggle:hover { background: #d4dce6; }
+.hint { margin-top: 20px; color: #475566; font-size: 13px; }
+.privacy { margin-top: 12px; color: #475566; font-size: 12px; }
+::selection { background: #c7dbff; color: #172c4b; }
+@media (prefers-color-scheme: dark) {
+  :root { color: #f0f3f7; background: #20242a; }
+  .intro,.hint,.privacy { color: #b8c5d5; }
+  #status { border-color: #495565; }
+  #toggle { background: #394658; color: #f0f3f7; }
+  #toggle:hover { background: #48596f; }
+}
+
+.brand-icon { display: block; margin-bottom: 12px; }

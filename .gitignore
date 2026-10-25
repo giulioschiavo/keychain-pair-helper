@@ -1,0 +1,9 @@
+build/
+.DS_Store
+*.zip
+*.pem
+*.key
+__pycache__/
+*.pyc
+
+!downloads/*.zip

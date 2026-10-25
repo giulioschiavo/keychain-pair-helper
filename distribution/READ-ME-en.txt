@@ -1,0 +1,46 @@
+KEYCHAIN PAIR HELPER — macOS — v0.1.1 (experimental)
+
+Already compiled for Apple Silicon and Intel. No developer tools required.
+Requires macOS 14+ and Google Chrome. Italian/English follow Chrome language.
+
+INSTALL
+1. Extract the whole ZIP and double-click Install.command.
+2. Chrome opens its Extensions page. Enable Developer mode, then click
+   Load unpacked. Press Command–Shift–G and enter:
+   ~/Library/Application Support/KeychainPairHelper/extension
+3. Open Keychain Pair Helper from Chrome's Extensions menu. Click Authorize
+   on Mac and enable Keychain Pair Helper in Privacy & Security > Accessibility.
+4. Keep the official iCloud Passwords extension installed. Open it normally
+   and keep Chrome foreground while pairing completes.
+
+This is an independent, experimental app. It is ad-hoc signed, NOT notarized.
+macOS may block the installer or helper. Review the source on GitHub and
+follow Apple's guidance for opening an app you trust. No system protections
+are disabled by this installer:
+https://support.apple.com/102445
+
+If the native helper is blocked, double-click KeychainPairHelper.app in the
+installed folder so macOS can show the prompt. Once approved it still needs
+the separate Accessibility permission. No admin password is requested by the
+installer itself; macOS may ask for authentication for permissions.
+
+ACCESSIBILITY
+This is a broad system permission. Source code limits operations to the
+Chrome pairing window and official extension popup. Codes are not saved or
+sent to an external server. There is no menu bar icon or login item.
+
+MIGRATING FROM THE OLD LOCAL PROTOTYPE
+Disable/remove the old Apple Pair companion before loading this one.
+They share an extension ID. Do not remove official iCloud Passwords.
+
+UNINSTALL
+Remove the companion from Chrome. Double-click Uninstall.command to move
+its installed files to Trash. Remove its Accessibility entry manually.
+
+KNOWN LIMITS
+First-attempt reliability and different macOS/Chrome versions still need
+testing. If confirmation fails, type the last digit manually. Updates can
+require renewing Accessibility. No Chrome Web Store package is provided.
+
+Source, updates and issues:
+https://github.com/giulioschiavo/keychain-pair-helper

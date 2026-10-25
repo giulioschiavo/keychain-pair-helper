@@ -1,0 +1,47 @@
+KEYCHAIN PAIR HELPER — macOS — v0.1.1 (sperimentale)
+
+Già compilato per Apple Silicon e Intel. Non servono strumenti di sviluppo.
+Richiede macOS 14+ e Google Chrome. Italiano/inglese seguono la lingua di Chrome.
+
+INSTALLAZIONE
+1. Estrai tutto lo ZIP e fai doppio clic su Install.command.
+2. Chrome apre la pagina Estensioni. Attiva Modalità sviluppatore, poi scegli
+   Carica estensione non pacchettizzata. Premi Comando–Maiuscole–G e inserisci:
+   ~/Library/Application Support/KeychainPairHelper/extension
+3. Apri Keychain Pair Helper dal menu Estensioni di Chrome. Scegli Autorizza
+   sul Mac e abilita Keychain Pair Helper in Privacy e sicurezza > Accessibilità.
+4. Mantieni installata l'estensione ufficiale Password di iCloud. Aprila come
+   sempre e lascia Chrome in primo piano durante l'abbinamento.
+
+È un'app indipendente e sperimentale, firmata ad hoc, NON notarizzata.
+macOS potrebbe bloccare l'installer o l'helper. Controlla il sorgente su GitHub
+e segui la guida Apple per aprire un'app di cui ti fidi. L'installer non
+disattiva protezioni del sistema:
+https://support.apple.com/102445
+
+Se l'helper viene bloccato, fai doppio clic su KeychainPairHelper.app nella
+cartella installata per far comparire il messaggio di macOS. Dopo l'approvazione
+serve comunque il permesso separato Accessibilità. L'installer non richiede
+password amministratore; macOS può chiedere autenticazione per i permessi.
+
+ACCESSIBILITÀ
+È un permesso di sistema ampio. Il sorgente limita le operazioni alla finestra
+di abbinamento Chrome e al popup ufficiale. I codici non vengono salvati o
+inviati a server esterni. Nessuna icona nella barra menu o elemento al login.
+
+SE USAVI IL VECCHIO PROTOTIPO LOCALE
+Disabilita/rimuovi il vecchio componente Apple Pair prima di caricare questo.
+Condividono l'ID dell'estensione. Non rimuovere Password di iCloud ufficiale.
+
+RIMOZIONE
+Rimuovi il componente da Chrome. Apri Uninstall.command per spostare i file
+installati nel Cestino. Rimuovi manualmente la voce da Accessibilità.
+
+LIMITI NOTI
+L'affidabilità al primo tentativo e altre versioni macOS/Chrome richiedono
+ulteriori prove. Se la conferma non parte, scrivi a mano l'ultima cifra.
+Gli aggiornamenti possono richiedere il rinnovo di Accessibilità. Non è un
+pacchetto distribuito tramite Chrome Web Store.
+
+Sorgente, aggiornamenti e segnalazioni:
+https://github.com/giulioschiavo/keychain-pair-helper
