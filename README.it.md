@@ -1,6 +1,6 @@
 # Keychain Pair Helper
 
-<img src="extension/icons/icon128.png" width="72" height="72" alt="Icona di Keychain Pair Helper">
+<img src="extension/icons/icon128.png" width="112" height="112" alt="Icona di Keychain Pair Helper">
 
 [English](README.md) · **Italiano**
 
@@ -8,7 +8,7 @@ Un piccolo componente macOS che compila il codice di abbinamento a sei cifre nel
 
 Mantieni il funzionamento nativo delle password: l’estensione ufficiale continua a compilare, salvare e gestire le credenziali. Questo progetto automatizza solo il codice iniziale.
 
-**Sperimentale · v0.1.1 · macOS + Google Chrome**
+**Sperimentale · v1.0 · macOS + Google Chrome**
 
 ## Scarica e installa — senza compilazione
 
@@ -49,7 +49,7 @@ Il progetto mantiene il protocollo di abbinamento esistente e automatizza la tra
 
 ## Limiti e stato delle prove
 
-Il prototipo iniziale è stato provato localmente con Password di iCloud **3.4.0**. In alcuni primi tentativi mancava l’ultima cifra. La versione **0.1.1** compila tutti i campi, attende il focus e limita i tentativi di conferma allo stesso popup invariato. La correzione richiede ancora prove più ampie: i controlli automatici non dimostrano l’affidabilità dell’abbinamento reale.
+Il prototipo iniziale è stato provato localmente con Password di iCloud **3.4.0**. In alcuni primi tentativi mancava l’ultima cifra. La versione **1.0** compila tutti i campi, attende il focus e limita i tentativi di conferma allo stesso popup invariato. La correzione richiede ancora prove più ampie: i controlli automatici non dimostrano l’affidabilità dell’abbinamento reale.
 
 Aggiornamenti di macOS, Chrome o dell’estensione possono cambiare l’interfaccia e interrompere il funzionamento. Viene usata l’automazione dell’interfaccia, non un’API pubblica di abbinamento. Altri browser Chromium e più profili Chrome contemporanei non sono supportati/provati.
 

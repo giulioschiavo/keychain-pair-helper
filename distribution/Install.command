@@ -42,7 +42,7 @@ for component in KeychainPairHelper.app extension; do
 done
 /bin/mv "$staging/host.json" "$native_host"
 /bin/chmod 600 "$native_host"
-/usr/bin/printf '{"version":"0.1.1"}\n' > "$install_dir/.keychain-pair-helper-install.json"
+/usr/bin/printf '{"version":"1.0"}\n' > "$install_dir/.keychain-pair-helper-install.json"
 if $italian; then
   echo 'Installazione completata. Nessuna compilazione necessaria.'
   echo '1. In Chrome attiva Modalità sviluppatore e scegli Carica estensione non pacchettizzata.'

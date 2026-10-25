@@ -1,4 +1,4 @@
-KEYCHAIN PAIR HELPER — macOS — v0.1.1 (experimental)
+KEYCHAIN PAIR HELPER — macOS — v1.0 (experimental)
 
 Already compiled for Apple Silicon and Intel. No developer tools required.
 Requires macOS 14+ and Google Chrome. Italian/English follow Chrome language.

@@ -1,6 +1,6 @@
 # Keychain Pair Helper
 
-<img src="extension/icons/icon128.png" width="72" height="72" alt="Keychain Pair Helper icon">
+<img src="extension/icons/icon128.png" width="112" height="112" alt="Keychain Pair Helper icon">
 
 **English** · [Italiano](README.it.md)
 
@@ -8,7 +8,7 @@ A small macOS companion that enters the six-digit pairing code in the **official
 
 Keep the native password experience. This project automates the initial pairing interaction; Apple's extension continues to fill, save and manage passwords.
 
-**Experimental · v0.1.1 · macOS + Google Chrome**
+**Experimental · v1.0 · macOS + Google Chrome**
 
 ## How it works
 
@@ -75,7 +75,7 @@ This automates a security interaction. It preserves the existing pairing protoco
 ## Status and known limitations
 
 - The initial prototype was exercised locally against iCloud Passwords **3.4.0**. It could miss the final digit on the first attempt.
-- Version **0.1.1** fills all six fields, waits for focus to settle, and bounds retries of the final confirmation to the same unchanged popup. The corrected behavior still needs broader real-world testing; automated checks do **not** prove successful pairing.
+- Version **1.0** fills all six fields, waits for focus to settle, and bounds retries of the final confirmation to the same unchanged popup. The corrected behavior still needs broader real-world testing; automated checks do **not** prove successful pairing.
 - macOS/Chrome/extension updates may change Accessibility structure, key handling or the popup path. This relies on UI automation, not a supported Apple pairing API.
 - Google Chrome is the only configured browser. Other Chromium browsers and multiple concurrent Chrome profiles are not supported/tested.
 - Keep Chrome foreground during pairing. Changes to the popup, field values or focus stop the submission rather than redirect it elsewhere.

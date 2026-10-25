@@ -28,7 +28,7 @@ def configure(repo, build):
                  CFBundleDisplayName='Keychain Pair Helper', CFBundleExecutable='KeychainPairHelper',
                  CFBundlePackageType='APPL', CFBundleShortVersionString=manifest['version'],
                  CFBundleIconFile='AppIcon',
-                 CFBundleVersion='2', LSMinimumSystemVersion='14.0', LSUIElement=True,
+                 CFBundleVersion='3', LSMinimumSystemVersion='14.0', LSUIElement=True,
                  NSHighResolutionCapable=True)
     dest = build / 'KeychainPairHelper.app/Contents/Info.plist'
     dest.parent.mkdir(parents=True, exist_ok=True)

@@ -1,5 +1,6 @@
 import json
 import os
+import plistlib
 from pathlib import Path
 import subprocess
 import sys
@@ -13,6 +14,15 @@ ARCHIVE = ROOT / 'downloads/KeychainPairHelper-macOS.zip'
 
 @unittest.skipUnless(sys.platform == 'darwin' and ARCHIVE.exists(), 'Requires macOS and packaged release')
 class ReadyMadeInstallerTests(unittest.TestCase):
+    def test_bundle_and_extension_versions_match_the_source(self):
+        with zipfile.ZipFile(ARCHIVE) as archive:
+            root = 'KeychainPairHelper-macOS/'
+            source = json.loads((ROOT / 'extension/manifest.json').read_text())
+            extension = json.loads(archive.read(root + 'extension/manifest.json'))
+            bundle = plistlib.loads(archive.read(root + 'KeychainPairHelper.app/Contents/Info.plist'))
+            self.assertEqual(extension['version'], source['version'])
+            self.assertEqual(bundle['CFBundleShortVersionString'], source['version'])
+
     def test_zip_can_install_without_python_or_compiler_and_update(self):
         with tempfile.TemporaryDirectory(prefix="keychain pair's release ") as temp:
             base = Path(temp)
